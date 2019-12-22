@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C
 
 RUN apt-get update \
-    && apt-get install --assume-yes --no-recommends \
+    && apt-get install --assume-yes --no-install-recommends \
         systemd systemd-sysv \
         net-tools \
     && apt-get clean \
